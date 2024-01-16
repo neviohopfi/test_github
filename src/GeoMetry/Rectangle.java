@@ -6,8 +6,9 @@ public class Rectangle extends Shape{
 	private double width;
 	
 	
-	public Rectangle(double length, double width) {
-		super();
+	public Rectangle(double length, double width, double x, double y) {
+		this.setX(x);
+		this.setY(y);
 		this.length = length;
 		this.width = width;
 	}
