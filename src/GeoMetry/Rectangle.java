@@ -6,7 +6,7 @@ public class Rectangle extends Shape{
 	private double width;
 	
 	
-	public Rectangle(double length, double width, double x, double y) {
+	public Rectangle(double x, double y, double length, double width) {
 		this.setX(x);
 		this.setY(y);
 		this.length = length;
@@ -30,11 +30,17 @@ public class Rectangle extends Shape{
 	}
 
 	
+	/**
+	 * Method calculates the circumference of the Rectangle
+	 */
 	@Override
 	public double calculateCircumference() {
 		return 2*(this.length + this.width);
 	}
 
+	/**
+	 * Method calculates the area of the Rectangle
+	 */
 	@Override
 	public double calculateArea() {
 		return this.length * this.width;

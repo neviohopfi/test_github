@@ -8,7 +8,7 @@ public class Triangle extends Shape{
 	private double height;
 	
 	
-	public Triangle(double a, double b, double c, double x, double y, double height) {
+	public Triangle(double x, double y, double a, double b, double c, double height) {
 		this.a = a;
 		this.b = b;
 		this.c = c;
@@ -43,14 +43,21 @@ public class Triangle extends Shape{
 	private void setHeight(double height) {
 		this.height = height;
 	}
+	
+	/**
+	 * Method calculates circumference of the Triangle
+	 */
 	@Override
 	public double calculateCircumference() {
 		return this.a + this.b + this.c;
 	}
 
+	/**
+	 * Method calculates area of the Triangle
+	 */
 	@Override
 	public double calculateArea() {
-		return this.a * this.height/2;
+		return this.c * this.height/2;
 	}
 	
 	
