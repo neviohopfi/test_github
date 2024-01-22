@@ -35,5 +35,13 @@ public class Circle extends Shape{
 	public double calculateArea() {
 		return this.radius * this.radius * Math.PI;
 	}
+
+
+	
+	@Override
+	public String toString() {
+		return "Circle: " + "radius: " + radius;
+	}
+	
 	
 }

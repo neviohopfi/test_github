@@ -19,6 +19,9 @@ public class Test {
 		g.addShape(t1);
  
 		System.out.println("Gesamtfläche: " + g.calculateSumArea());
+		System.out.println("Gesamtumfang: " + g.calculateSumCircumference());
+		System.out.println("Größte Fläche: " + g.returnGreatestAreaShape());
+		g.returnGroupedShapes();
 	}
 
 }
