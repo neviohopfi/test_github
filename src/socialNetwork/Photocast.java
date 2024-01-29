@@ -8,7 +8,7 @@ public class Photocast extends News{
 	private String photoHeadline;
 	
 
-	public Photocast(String author, LocalDate timestamp, String photoFileName, String photoHeadline) {
+	public Photocast(String author, String photoFileName, String photoHeadline) {
 		this.setAuthor(author);
 		this.setTiemstamp(LocalDate.now());
 		this.setLikes(0);
