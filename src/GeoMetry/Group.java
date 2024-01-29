@@ -39,7 +39,7 @@ public class Group {
 	
 	/**
 	 * Method calculates the Areas from all shapes
-	 * @return
+	 * @return a
 	 */
 	public double calculateSumArea() {
 		double a=0;
@@ -51,7 +51,7 @@ public class Group {
 	
 	/**
 	 * Method calculates the circumference from all shapes
-	 * @return
+	 * @return c
 	 */
 	public double calculateSumCircumference() {
 		double c = 0;
