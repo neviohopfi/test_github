@@ -1,9 +1,15 @@
 package socialNetwork;
 
-public class NewsFeed {
+import java.util.ArrayList;
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+public class NewsFeed {
+		
+		private ArrayList<News> news;
+		
+		public NewsFeed() {
+				this.news = new ArrayList<News>();
+		
+		
 
 	}
 
