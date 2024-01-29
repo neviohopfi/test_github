@@ -9,9 +9,11 @@ public abstract class News {
 	private LocalDate tiemstamp;
 	private int likes;
 	private ArrayList <String> comments;
+	
 	public String getAuthor() {
 		return author;
 	}
+	
 	public void setAuthor(String author) {
 		this.author = author;
 	}
