@@ -33,6 +33,11 @@ public abstract class News {
 	public void setComments(ArrayList<String> comments) {
 		this.comments = comments;
 	}
+	@Override
+	public String toString() {
+		return "News [author=" + author + ", tiemstamp=" + tiemstamp + ", likes=" + likes + ", comments=" + comments
+				+ "]";
+	}
 	
 	
 	
