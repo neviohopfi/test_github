@@ -7,8 +7,8 @@ public class Newscast extends News{
 
 	private String textMessage;
 
-	public Newscast(String author, LocalDate timestamp, int likes, ArrayList <String> comments, String textMessage) {
-		this.textMessage = textMessage;
+	public Newscast(String author, LocalDate timestamp, int likes, ArrayList <String> comments, 
+			String textMessage) {
 		this.setAuthor(author);
 		this.setTiemstamp(LocalDate.now());
 		this.setLikes(likes);
