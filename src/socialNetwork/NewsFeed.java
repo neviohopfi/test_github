@@ -21,7 +21,7 @@ public class NewsFeed {
 		
 		
 		public void add(News n) {
-			if(this.news.contains(n)) {
+			if(!this.news.contains(n)) {
 				this.news.add(n);
 			}
 		}
