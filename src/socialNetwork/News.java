@@ -18,10 +18,10 @@ public abstract class News {
 		this.author = author;
 	}
 	public LocalDate getTiemstamp() {
-		return tiemstamp;
+		return timestamp;
 	}
 	public void setTiemstamp(LocalDate tiemstamp) {
-		this.tiemstamp = tiemstamp;
+		this.timestamp = tiemstamp;
 	}
 	public int getLikes() {
 		return likes;
@@ -39,7 +39,7 @@ public abstract class News {
 	public String toString() {
 		return "Beitrag: \n" + 
 				"\t Benutzername des Autors: " + this.author + "\n" +
-				"\t Zeitstempel: " + this.Timetamp + "\n" +
+				"\t Zeitstempel: " + this.timestamp + "\n" +
 				"\t Anzahl Likes: " + this.likes + "\n" +
 				"\t Kommentare: " + this.comments + "\n";
 	}
