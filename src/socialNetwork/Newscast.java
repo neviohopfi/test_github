@@ -21,6 +21,12 @@ public class Newscast extends News{
 	public void setTextMessage(String textMessage) {
 		this.textMessage = textMessage;
 	}
+
+	@Override
+	public String toString() {
+		return super.toString() +
+				"\t Message " + this.textMessage;
+	}
 	
 	
 	

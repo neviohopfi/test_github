@@ -36,6 +36,16 @@ public class Photocast extends News{
 	public void setPhotoHeadline(String photoHeadline) {
 		this.photoHeadline = photoHeadline;
 	}
+
+
+	@Override
+	public String toString() {
+		return super.toString() +
+				"\t File Name of the Phot " + this.photoFileName + "\n" +
+				"\t Head Line of the Photo" + this.photoHeadline;
+				
+	}
 		
+	
 	
 }
