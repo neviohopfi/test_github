@@ -40,6 +40,12 @@ public class NewsFeed {
 			System.out.println(searchByAuthor);
 		}
 		
+		public void print() {
+			for(News n : this.news) {
+				System.out.println(n);
+			}
+		}
+		
 		
 	
 	

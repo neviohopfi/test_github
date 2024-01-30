@@ -38,12 +38,10 @@ public class Photocast extends News{
 	}
 
 
-	@Override
 	public String toString() {
-		return super.toString() +
-				"\t File Name of the Phot " + this.photoFileName + "\n" +
-				"\t Head Line of the Photo" + this.photoHeadline;
-				
+		return super.toString() + 
+			  "\t Filename: " + this.photoFileName + "\n" + 
+			  "\t Headline: " + this.photoHeadline + "\n";
 	}
 		
 	

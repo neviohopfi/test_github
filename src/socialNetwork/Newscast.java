@@ -22,10 +22,9 @@ public class Newscast extends News{
 		this.textMessage = textMessage;
 	}
 
-	@Override
 	public String toString() {
-		return super.toString() +
-				"\t Message " + this.textMessage;
+		return super.toString() + 
+			"\t Message: " + this.textMessage + "\n";
 	}
 	
 	

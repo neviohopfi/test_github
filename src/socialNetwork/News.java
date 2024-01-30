@@ -6,7 +6,7 @@ import java.util.ArrayList;
 public abstract class News {
 
 	private String author;
-	private LocalDate tiemstamp;
+	private LocalDate timestamp;
 	private int likes;
 	private ArrayList <String> comments;
 	
@@ -35,12 +35,14 @@ public abstract class News {
 	public void setComments(ArrayList<String> comments) {
 		this.comments = comments;
 	}
-	@Override
-	public String toString() {
-		return "News [author=" + author + ", tiemstamp=" + tiemstamp + ", likes=" + likes + ", comments=" + comments
-				+ "]";
-	}
 	
+	public String toString() {
+		return "Beitrag: \n" + 
+				"\t Benutzername des Autors: " + this.author + "\n" +
+				"\t Zeitstempel: " + this.Timetamp + "\n" +
+				"\t Anzahl Likes: " + this.likes + "\n" +
+				"\t Kommentare: " + this.comments + "\n";
+	}
 	
 	
 }
