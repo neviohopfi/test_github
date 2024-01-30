@@ -44,5 +44,7 @@ public abstract class News {
 				"\t Kommentare: " + this.comments + "\n";
 	}
 	
+	public abstract void addLikes();
+	
 	
 }
