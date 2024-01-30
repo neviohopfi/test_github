@@ -29,4 +29,9 @@ public class NewsFeed {
 		public void remove(News n) {
 			this.news.remove(n);
 		}
+		
+		
+	
+	
+		
 }
