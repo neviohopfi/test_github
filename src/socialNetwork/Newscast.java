@@ -1,7 +1,5 @@
 package socialNetwork;
 
-import java.time.LocalDate;
-import java.util.ArrayList;
 
 public class Newscast extends News{
 
@@ -9,10 +7,8 @@ public class Newscast extends News{
 
 	
 	public Newscast(String author, String textMessage) {
+		super();
 		this.setAuthor(author);
-		this.setTiemstamp(LocalDate.now());
-		this.setLikes(0);
-		this.setComments(new ArrayList <String>());
 		this.textMessage = textMessage;
 	}
 
@@ -33,7 +29,5 @@ public class Newscast extends News{
 	public void addLikes() {
 		this.setLikes(getLikes()+1);
 	}
-	
-	
 	
 }

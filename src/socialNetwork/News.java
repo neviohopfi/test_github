@@ -10,6 +10,12 @@ public abstract class News {
 	private int likes;
 	private ArrayList <String> comments;
 	
+	public News() {
+		this.timestamp = LocalDate.now();
+		this.likes = 0;
+		this.comments = new ArrayList<>();
+	}
+	
 	public String getAuthor() {
 		return author;
 	}
@@ -17,11 +23,11 @@ public abstract class News {
 	public void setAuthor(String author) {
 		this.author = author;
 	}
-	public LocalDate getTiemstamp() {
+	public LocalDate getTimestamp() {
 		return timestamp;
 	}
-	public void setTiemstamp(LocalDate tiemstamp) {
-		this.timestamp = tiemstamp;
+	public void setTimestamp(LocalDate timestamp) {
+		this.timestamp = timestamp;
 	}
 	public int getLikes() {
 		return likes;
