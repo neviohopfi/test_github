@@ -7,6 +7,7 @@ public class Newscast extends News{
 
 	private String textMessage;
 
+	
 	public Newscast(String author, String textMessage) {
 		this.setAuthor(author);
 		this.setTiemstamp(LocalDate.now());

@@ -23,7 +23,6 @@ public class Photocast extends News{
 		return photoFileName;
 	}
 
-
 	public void setPhotoFileName(String photoFileName) {
 		this.photoFileName = photoFileName;
 	}
