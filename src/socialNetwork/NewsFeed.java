@@ -42,6 +42,7 @@ public class NewsFeed {
 		}
 		
 		
+		
 		public void searchPhots(String author) {
 			ArrayList<News> searchPhotos = new ArrayList<News>();
 			for(News n : this.news) {
