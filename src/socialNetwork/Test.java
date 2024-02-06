@@ -9,6 +9,10 @@ public class Test {
 		News n = new Newscast("Andreas", "Das ist ein Text");
 		News p = new Photocast("Nevio", "image1.png", "Klassenfoto");
 		
+		Comment c = new Comment("Moinsen");
+		n.addCommentary(c);
+		
+		
 		nf.add(n);
 		nf.add(p);
 		//nf.search(author);
