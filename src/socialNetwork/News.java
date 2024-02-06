@@ -73,8 +73,8 @@ public abstract class News {
 		Instant start = n.getTimestamp(); 
 		Instant end = Instant.now();
 		
-		Duration timeElapsed = Duration.between(start, end);
-		System.out.println("Time taken: " + timeElapsed.toMillis() + " Milliseconds");
+		System.out.println("Beitrag wurde vor: " + Duration.between(start, end).toMinutes() + "Minuten erstellt");
+		
 	}
 	
 }
