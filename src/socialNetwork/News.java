@@ -12,11 +12,13 @@ public abstract class News {
 	private Instant timestamp;
 	private int likes;
 	private ArrayList <Comment> comments;
+	private ArrayList <String> hastag;
 	
 	public News() {
 		this.timestamp = Instant.now();
 		this.likes = 0;
 		this.comments = new ArrayList<>();
+		this.hastag = new ArrayList<>();
 	}
 	
 	public String getAuthor() {
@@ -44,13 +46,22 @@ public abstract class News {
 	public void setComments(ArrayList<Comment> comments) {
 		this.comments = comments;
 	}
-	
+		
+	public ArrayList<String> getHastag() {
+		return hastag;
+	}
+
+	public void setHastag(ArrayList<String> hastag) {
+		this.hastag = hastag;
+	}
+
 	public String toString() {
 		return "Beitrag: \n" + 
 				"\t Benutzername des Autors: " + this.author + "\n" +
 				"\t Zeitstempel: " + this.timestamp + "\n" +
 				"\t Anzahl Likes: " + this.likes + "\n" +
-				"\t Kommentare: " + this.comments + "\n";
+				"\t Kommentare: " + this.comments + "\n" +
+				"\t Hastags: " + this.hastag + "\n";
 	}
 	
 	public abstract void addLikes();
@@ -74,7 +85,6 @@ public abstract class News {
 		Instant end = Instant.now();
 		
 		System.out.println("Beitrag wurde vor: " + Duration.between(start, end).toMinutes() + "Minuten erstellt");
-		
 	}
 	
 }
