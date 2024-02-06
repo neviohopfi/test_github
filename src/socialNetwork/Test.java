@@ -18,6 +18,10 @@ public class Test {
 		p.addLikes();
 		
 		nf.print();
+		
+		n.setTimestamp(null);
+		
+		n.uploadDate(n);
 	}
 
 }
