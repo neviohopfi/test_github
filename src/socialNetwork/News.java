@@ -11,7 +11,7 @@ public abstract class News {
 	private String author;
 	private Instant timestamp;
 	private int likes;
-	private ArrayList <String> comments;
+	private ArrayList <Comment> comments;
 	
 	public News() {
 		this.timestamp = Instant.now();
@@ -38,10 +38,10 @@ public abstract class News {
 	public void setLikes(int likes) {
 		this.likes = likes;
 	}
-	public ArrayList<String> getComments() {
+	public ArrayList<Comment> getComments() {
 		return comments;
 	}
-	public void setComments(ArrayList<String> comments) {
+	public void setComments(ArrayList<Comment> comments) {
 		this.comments = comments;
 	}
 	
@@ -60,7 +60,7 @@ public abstract class News {
 	 * Method adds a comment to a post
 	 * @param comment
 	 */
-	public void addCommentary(String comment) {
+	public void addCommentary(Comment comment) {
 		this.comments.add(comment);
 	}
 	
