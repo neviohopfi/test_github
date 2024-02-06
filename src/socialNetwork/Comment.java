@@ -38,4 +38,9 @@ public class Comment {
 				"\t Anzahl Likes " + this.Likes + "\n";
 	}
 	
+	public void addLikes() {
+		this.setLikes(getLikes() + 1);
+		
+	}
+	
 }
