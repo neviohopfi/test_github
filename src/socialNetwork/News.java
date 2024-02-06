@@ -60,8 +60,9 @@ public abstract class News {
 	 * Method adds a comment to a post
 	 * @param comment
 	 */
-	public void addCommentary(Comment comment) {
-		this.comments.add(comment);
+	public void addCommentary(String comment) {
+		Comment c = new Comment(comment);
+		this.comments.add(c);
 	}
 	
 	
