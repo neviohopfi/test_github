@@ -1,18 +1,20 @@
 package socialNetwork;
 
-import java.time.LocalDate;
-import java.time.temporal.ChronoUnit;
 import java.util.ArrayList;
+import java.time.Duration;
+import java.time.Instant;
+
+
 
 public abstract class News {
 
 	private String author;
-	private LocalDate timestamp;
+	private Instant timestamp;
 	private int likes;
 	private ArrayList <String> comments;
 	
 	public News() {
-		this.timestamp = LocalDate.now();
+		this.timestamp = Instant.now();
 		this.likes = 0;
 		this.comments = new ArrayList<>();
 	}
@@ -24,10 +26,10 @@ public abstract class News {
 	public void setAuthor(String author) {
 		this.author = author;
 	}
-	public LocalDate getTimestamp() {
+	public Instant getTimestamp() {
 		return timestamp;
 	}
-	public void setTimestamp(LocalDate timestamp) {
+	public void setTimestamp(Instant timestamp) {
 		this.timestamp = timestamp;
 	}
 	public int getLikes() {
@@ -53,16 +55,26 @@ public abstract class News {
 	
 	public abstract void addLikes();
 	
+	
+	/**
+	 * Method adds a comment to a post
+	 * @param comment
+	 */
 	public void addCommentary(String comment) {
 		this.comments.add(comment);
 	}
 	
-	public void uploadDate() {
-		LocalDate start = LocalDate.now(); 
-		LocalDate end = LocalDate.now();
+	
+	/**
+	 * Method calculates a time between the post reales and now.
+	 * @param n is the news you want to check
+	 */
+	public void uploadDate(News n) {
+		Instant start = n.getTimestamp(); 
+		Instant end = Instant.now();
 		
-		long time = ChronoUnit.MINUTES.between(start, end);
-		System.out.println(time);
+		Duration timeElapsed = Duration.between(start, end);
+		System.out.println("Time taken: " + timeElapsed.toMillis() + " Milliseconds");
 	}
 	
 }

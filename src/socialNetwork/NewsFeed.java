@@ -1,6 +1,5 @@
 package socialNetwork;
 
-import java.time.LocalDate;
 import java.util.ArrayList;
 
 public class NewsFeed {
@@ -21,17 +20,29 @@ public class NewsFeed {
 		}		
 		
 		
+		/**
+		 * Method adds News 
+		 * @param n
+		 */
 		public void add(News n) {
 			if(!this.news.contains(n)) {
 				this.news.add(n);
 			}
 		}
 		
+		
+		/**
+		 * Method removes News
+		 * @param n
+		 */
 		public void remove(News n) {
 			this.news.remove(n);
 		}
 		
-		
+		/**
+		 * Method searches News by an entered author
+		 * @param author
+		 */
 		public void searchNews(String author) {
 			ArrayList<News> searchNews = new ArrayList<News>();
 			for(News n : this.news) {
@@ -43,7 +54,10 @@ public class NewsFeed {
 		}
 		
 		
-		
+		/**
+		 * Method searches Photos by an entered author
+		 * @param author
+		 */
 		public void searchPhots(String author) {
 			ArrayList<News> searchPhotos = new ArrayList<News>();
 			for(News n : this.news) {
@@ -55,6 +69,10 @@ public class NewsFeed {
 		}
 		
 		
+		/**
+		 * Method searches after an author
+		 * @param author
+		 */
 		public void search(String author) {
 			ArrayList<News> searchByAuthor = new ArrayList<News>();
 			for(News n : this.news) {
@@ -65,6 +83,10 @@ public class NewsFeed {
 			System.out.println(searchByAuthor);
 		}
 		
+		
+		/**
+		 * Method prints all the News in the ArrayList
+		 */
 		public void print() {
 			for(News n : this.news) {
 				System.out.println(n);
