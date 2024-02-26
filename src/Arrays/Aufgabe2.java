@@ -19,8 +19,10 @@ public class Aufgabe2 {
 		String[]signs1 = {"F", "DO", "MOS", "MOS","MOS", "MOS", "WES"};
 		System.out.println(isProbablyApproaching(signs1));	//true
 		
+		
 		String[]signs2 = {"F", "DO", "MOS", "MOS", "WES", "MOS", "MOS"};
 		System.out.println(isProbablyApproaching(signs2));	//false	
 	}
+	
 
 }
