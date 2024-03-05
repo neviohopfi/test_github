@@ -13,6 +13,9 @@ public class MusicalChairsGame {
 		mc1.rotate(2);
 		System.out.println(mc1);
 		
+		mc1.rotateAndRemovelast(2);
+		System.out.println(mc1);
+		
 
 	}
 
