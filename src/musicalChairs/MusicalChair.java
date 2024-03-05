@@ -44,4 +44,9 @@ public class MusicalChair {
 		
 	}
 	
+	public void rotateAndRemovelast(int distance){
+		this.rotate(distance);
+		((LinkedList<String>) this.names).removeLast();
+	}
+	
 }
