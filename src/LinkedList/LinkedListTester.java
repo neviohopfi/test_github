@@ -1,6 +1,5 @@
 package LinkedList;
 
-import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Iterator;
 import java.util.LinkedList;
@@ -32,7 +31,6 @@ public class LinkedListTester {
 		iterator = list.iterator();
 		while(iterator.hasNext()) {
 			System.out.println(iterator.next());
-			iterator.next();
 		}
 	}
 }
