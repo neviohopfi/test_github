@@ -22,10 +22,17 @@ public class LinkedListTester {
 		Iterator<Integer> iterator = list.iterator();
 		while(iterator.hasNext()) {
 			//System.out.println(iterator.next());
-			if(iterator.next() == 3);
-				System.out.println("Found 3");
+			if(iterator.next() == 3) {
+				//System.out.println("Found 3");
+			iterator.remove();
+			}
 		}
-		
+		//Iterator muss wieder zurückgesetzt werden
+		//Iterator muss wieder an den Anfang der Liste gesetzt werden
+		iterator = list.iterator();
+		while(iterator.hasNext()) {
+			System.out.println(iterator.next());
+			iterator.next();
+		}
 	}
-
 }
