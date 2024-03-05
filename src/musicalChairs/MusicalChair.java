@@ -41,6 +41,7 @@ public class MusicalChair {
 	
 	public void rotate(int distance) {
 		Collections.rotate(this.names, distance);
+		
 	}
 	
 }
