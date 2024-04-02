@@ -41,4 +41,16 @@ public class ArrayQueue {
 		return firstElement;
 	}
 	
+	public static void queueDisplay() {
+		if(front == rear) {
+			System.out.println("Queue is empty!");
+		} else {
+			for(int i = front; i < rear; i++) {
+				System.out.println(i);
+			}
+		}
+	}
+	
+	
+	
 }
