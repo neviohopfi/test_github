@@ -51,6 +51,17 @@ public class ArrayQueue {
 		}
 	}
 	
+	public static int queueFront() {
+		// TODO erstes Element ohne Löschen zurückgeben
+		int firstElement = 0;
+		if(rear == front) {
+			System.out.println("Queue is empty");
+		} else {
+			firstElement = queue[front];
+		}
+		return firstElement;
+	}
+	
 	
 	
 }
