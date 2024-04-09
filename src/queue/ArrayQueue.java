@@ -14,6 +14,10 @@ public class ArrayQueue {
 		queue = new int[size];
 	}
 	
+	/**
+	 * method checks if capacity is full, if not it should move the rear + 1
+	 * @param item
+	 */
 	public static void queueEnqueue(int item) {
 		if(rear == capacity) {
 			System.out.println("Queue ist voll.");
@@ -23,6 +27,10 @@ public class ArrayQueue {
 		}
 	}
 	
+	/**
+	 * method checks, if the queue is empty, if not move the rear -1
+	 * @return
+	 */
 	public static int queueDequeue() {
 		int firstElement = 0;
 		if(rear == front) {
@@ -41,16 +49,23 @@ public class ArrayQueue {
 		return firstElement;
 	}
 	
+	/**
+	 * method gives out the queue, if it is not empty
+	 */
 	public static void queueDisplay() {
 		if(front == rear) {
 			System.out.println("Queue is empty!");
 		} else {
 			for(int i = front; i < rear; i++) {
-				System.out.println(i);
+				System.out.println(queue[i]);
 			}
 		}
 	}
 	
+	/**
+	 * method checks, if queue is empty, if not it gives back the first element 
+	 * @return
+	 */
 	public static int queueFront() {
 		// TODO erstes Element ohne Löschen zurückgeben
 		int firstElement = 0;
@@ -62,6 +77,8 @@ public class ArrayQueue {
 		return firstElement;
 	}
 	
-	
+	// HÜ: ArrayQueueTest Klasse erstellen - alle Methoden von ArrayQueue testen
+	//	JavaDoc-Kommentare
+	//	Kapitel 5 nochmals durcharbeiten
 	
 }
