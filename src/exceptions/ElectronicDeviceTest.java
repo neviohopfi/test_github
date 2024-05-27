@@ -6,7 +6,11 @@ public class ElectronicDeviceTest {
 		
 		ElectronicDevice ed = new ElectronicDevice();
 		ed.setName("Radio");
-		ed.setWatt(100);
+		try {
+			ed.setWatt(-100);
+		} catch(IllegalWattExxception e) {
+			System.out.println("Negative Watt sind nicht erlaubt!");
+		}   
 
 	}
 
